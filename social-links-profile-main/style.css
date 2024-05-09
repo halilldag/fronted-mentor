@@ -1,0 +1,88 @@
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --secondary-white: hsl(0, 0%, 100%);
+    --secondary-grey: hsl(0, 0%, 20%);
+    --secondary-dark-grey: hsl(0, 0%, 12%);
+    --secondary-off-black: hsl(0, 0%, 8%)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: var(--secondary-white)
+}
+
+main {
+    background-color: var(--secondary-off-black);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--secondary-dark-grey);
+    width: 90%;
+    max-width: 350px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.card-image {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.card-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: var(--primary-green);
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 12px;
+margin-bottom: 15px;
+}
+
+.social-list {
+    list-style-type: none;
+    text-align: center;
+}
+.social-list a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-list a:hover, li:hover{
+background-color: var(--primary-green);
+color: var(--secondary-off-black);
+font-weight: 600;
+}
+
+
+.social-item {
+    margin-bottom: 30px;
+    background: var(--secondary-grey);
+    padding: 10px 70px 10px 70px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.social-item:nth-of-type(1) {
+    margin-top: 15px;
+}
+
